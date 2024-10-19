@@ -4,14 +4,6 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.util.List;
-
-import org.antonio.DynamoDBItem;
-import org.antonio.DynamoDBHandler;
-
-import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
-import java.awt.*;
-import java.util.List;
 import java.util.Map;
 
 public class Main {
@@ -20,12 +12,12 @@ public class Main {
         // Carica la configurazione
         Config config = ConfigHandler.loadConfig();
 
-        // Crea il frame principale
+        // Creating the Frame
         JFrame frame = new JFrame("DynamoDB Viewer");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 600);
 
-        // Crea il modello della tabella dinamicamente in base alle colonne configurate
+        // Dinamically create the Table Model (with the configuration in config.json)
         DefaultTableModel model = new DefaultTableModel(config.getColumns().toArray(), 0);
         JTable table = new JTable(model);
 
