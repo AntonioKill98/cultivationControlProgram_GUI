@@ -8,6 +8,9 @@ Note: This is not the main project, but it depends on it. The original project i
 
 The GUI was developed to easily access and visualize data from the DynamoDB database used in the main CCP project. This tool not only helps CCP users but is highly customizable, making it useful even outside of the CCP context for any DynamoDB-related visualization tasks.
 
+<img src="./screen.png" alt="Project Screenshot" width="600">
+
+
 ## Features
 - AWS SDK for Java: Demonstrates the use of the AWS SDK to interact with DynamoDB.
 - Highly Customizable: The configuration can be easily modified via a JSON file to change the AWS credentials, DynamoDB table name, columns to display, and more.
